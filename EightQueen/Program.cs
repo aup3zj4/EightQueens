@@ -31,11 +31,9 @@ namespace EightQueen
                     if (x == Queen - 1)//最終列
                     {
                         PrintAnswer();
-                        Queens[x] = 0;
                         return;
                     }
                     FindQueenInLine(x + 1);
-                    Queens[x] = 0;//重設被汙染的值
                 }
             }
         }
